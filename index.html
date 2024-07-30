@@ -17,6 +17,30 @@
       crossorigin="anonymous"
     ></script>
     <title>iTunes API</title>
+    <style>
+      body {
+        background-image: url(./assets/music-background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        color: rgb(108, 49, 117);
+        text-shadow: 
+            2px 2px 4px rgba(255, 255, 255, 0.7),
+            -2px -2px 4px rgba(61, 61, 61, 0.7); 
+        font-size: 2.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+      #ricercaBox, table {
+        background-color: rgba(243, 243, 243, 0.739);
+      }
+      #listaRisultati {
+        background-color: transparent;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -33,7 +57,7 @@
         </div>
         <div id="messaggio" class="text-danger"></div>
         <hr>
-        <p class="mb-4">
+        <p class="mb-4 p-2" id="ricercaBox">
             Risultati della Ricerca per:
             <strong id="ricerca"></strong>
         </p>

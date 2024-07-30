@@ -1,9 +1,9 @@
-// https://iTunes.apple.com/search?term=<nome_artista/gruppo>&media=music&limit=40
+// https://iTunes.apple.com/search?term=<nome_artista/gruppo>&media=music&limit=20
 
 function cerca() {
     const termineRicerca = document.getElementById("termineRicerca").value.trim().toLowerCase();
 
-    const url = `https://iTunes.apple.com/search?term=${encodeURI(termineRicerca)}&media=music&limit=40`;
+    const url = `https://iTunes.apple.com/search?term=${encodeURI(termineRicerca)}&media=music&limit=20`;
 
     axios.get(url)
         .then(response => {
